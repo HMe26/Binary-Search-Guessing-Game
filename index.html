@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Binary Search Guessing Game</h1>
+        <p>Think of a number between 1 and 100<br>I'll try to guess it using Binary Search</p>
+        <div class="guess" id="guess"></div>
+        <div class="buttons">
+            <button class="btn" onclick="userResponse('>')">&gt; Higher</button>
+            <button class="btn" onclick="userResponse('=')">=  Correct</button>
+            <button class="btn" onclick="userResponse('<')">&lt; Lower</button>
+        </div>
+        <div class="stats">
+            <p>Attempts: <span id="attempts">0</span></p>
+            <p>Best Score: <span id="bestScore">-</span></p>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="error" id="error"></div>
+        <button class="btn reset-btn" onclick="resetGame()" id="resetBtn" style="display: none;">New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
