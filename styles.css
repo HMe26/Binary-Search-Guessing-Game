@@ -193,19 +193,69 @@ h1 {
         .footer {
             position: static;
             margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(145deg, rgba(41, 128, 185, 0.2), rgba(142, 68, 173, 0.2));
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
         }
-        
+
         .developers {
-            padding: 10px;
+            max-width: 100%;
+            margin: 0 auto;
         }
-        
+
+        .developers h3 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+        }
+
         .developer-info {
-            gap: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        
+
         .developer {
-            padding: 12px 20px;
-            font-size: 14px;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .developer:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .developer strong {
+            color: #2c3e50;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                margin-top: 30px;
+                padding: 15px;
+            }
+            
+            .developer-info {
+                gap: 15px;
+            }
+            
+            .developer {
+                padding: 12px 20px;
+                font-size: 14px;
+                width: 100%;
+            }
         }
     }
 }
