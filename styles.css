@@ -259,3 +259,81 @@ h1 {
         }
     }
 }
+
+.footer {
+    margin-top: 40px;
+    padding: 25px;
+    background: linear-gradient(145deg, rgba(41, 128, 185, 0.3), rgba(142, 68, 173, 0.3));
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.developers {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.developers h3 {
+    color: #2c3e50;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.developer-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.developer {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.developer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+.developer strong {
+    color: #2980b9;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* تحسينات للشاشات المتوسطة */
+@media (max-width: 768px) {
+    .developer {
+        min-width: 200px;
+    }
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 480px) {
+    .footer {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+    
+    .developer {
+        min-width: 100%;
+        padding: 15px;
+    }
+    
+    .developer-info {
+        gap: 15px;
+    }
+}
