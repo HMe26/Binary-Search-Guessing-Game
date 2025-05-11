@@ -135,4 +135,77 @@ h1 {
     h1 {
         font-size: 1.8em;
     }
+
+    .footer {
+        position: fixed;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .developers {
+        max-width: 600px;
+        margin: auto;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .developers h3 {
+        color: #ffffff;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .developer-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .developer {
+        padding: 15px 25px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+    }
+
+    .developer:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .developer strong {
+        color: #ffffff;
+        font-size: 1.1em;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 480px) {
+        .footer {
+            position: static;
+            margin-top: 40px;
+        }
+        
+        .developers {
+            padding: 10px;
+        }
+        
+        .developer-info {
+            gap: 15px;
+        }
+        
+        .developer {
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+    }
 }

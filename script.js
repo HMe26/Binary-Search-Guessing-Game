@@ -78,6 +78,5 @@ function userResponse(response) {
     }
 }
 
-// بدء اللعبة
 updateStats();
 makeGuess();
